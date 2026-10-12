@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap');
 
 body {
-  background-image: url(mainBG.jpg);
+  background-image: url(Background.png);
   /*background-size: auto;*/
-  /*background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
   color: blueviolet;
   font-family: "Bitcount Single", system-ui;
   font-optical-sizing: auto;
   font-style: normal;
   /*background-size: cover;*/
+  background-position: center top;
 }
 
 a {
@@ -19,25 +20,53 @@ a {
 }
 
 h1{
+  left: 140px;
+  top: 5px;
+  font-weight: bold;
+   color: #211ea1;
    text-align: left;
- position: relative;
+   position: relative;
+   text-shadow: 2px 2px #dd00ff;
   justify-content: center;
+  font-size: 40px;
+}
+
+div.Texture{
+  position: absolute;
+  top: -80px;
+  /*left: 0px;*/
+  z-index: -1;
+}
+
+div.Camera{
+  position: relative;
+  top: 80px;
+  left: -100px;
+}
+
+div.Seagul{
+    position: relative;
+  top: 80px;
+  left: -100px;
 }
 
 h2 {
+  left: 110px;
+  top: -30px;
   text-align: left;
   position: relative;
   font-size: 15px;
-  color: palevioletred
+  color: #211ea1;
+  text-shadow: 2px 2px #ff42de;
 }
 
 div.content {
-background-color:  rgba(16,16,16,0.8);
- padding-left: 20px;
+/*background-color:  rgba(16,16,16,0.8);*/
+ padding-left: 10px;
  position: absolute;
  font-size: 25px;
  align-content: center;
- left: 100px;
+ left: 500px;
  right: 100px;
  justify-content: center;
 }
@@ -48,12 +77,40 @@ div.DearDiary{
   align-content: left;
 }
 
+.container .hover-image {
+    /*
+    width: 300px;
+    height: 300px;
+    */
+    display: none;
+    /*padding: 20px;*/
+}
+
+.container:hover .initial {
+    width: 300px;
+    height: 300px;
+    display: none;
+    /*padding: 20px;*/
+}
+
+.container:hover .hover-image {
+    /*
+    width: 300px;
+    height: 300px;
+    */
+    display: block;
+    /*padding: 20px;*/
+}
+
+
+/*
 div.flex{
    justify-content: center;
   align-content: center;
     display: flex;
   text-align: center;
 }
+*/
 
 p{
   font-size: 20px;
