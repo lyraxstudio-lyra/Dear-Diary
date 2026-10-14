@@ -1,15 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 body {
-  background-image: url(Background.png);
+  /*background-image: url(Background.png);*/
   /*background-size: auto;*/
   background-repeat: no-repeat;
   color: blueviolet;
-  font-family: "Bitcount Single", system-ui;
+  font-family: "Caveat", cursive;
   font-optical-sizing: auto;
+  font-weight: weight;
   font-style: normal;
   /*background-size: cover;*/
   background-position: center top;
+}
+.fix{
+  position: absolute;
+  bottom: -30%;
+  /*left: 50%;*/
+  z-index: -2;
+  /*height: 100vh;*/
 }
 
 a {
@@ -39,14 +46,14 @@ div.Texture{
 }
 
 div.Camera{
-  position: relative;
+  position: absolute;
   top: 80px;
   left: -100px;
 }
 
-div.Seagul{
-    position: relative;
-  top: 80px;
+div.Seagull{
+  position: absolute;
+  top: 500px;
   left: -100px;
 }
 
@@ -56,20 +63,41 @@ h2 {
   text-align: left;
   position: relative;
   font-size: 15px;
+  font-weight: 80px;
   color: #211ea1;
   text-shadow: 2px 2px #ff42de;
 }
 
 div.content {
 /*background-color:  rgba(16,16,16,0.8);*/
- padding-left: 10px;
  position: absolute;
- font-size: 25px;
- align-content: center;
+  font-weight: bold;
+  /*color: black;*/
+ font-size: 40px;
+ /*align-content: center;*/
  left: 500px;
  right: 100px;
- justify-content: center;
+ /*justify-content: center;*/
+  background: url("NoteBook.png") center / 100% 100% no-repeat;
+  padding: 70px 60px 70px 30px;
+  box-sizing: border-box;
 }
+
+/*
+div.imageBox{
+    background-image: url(NoteBook.png);
+  position: fx;
+  z-index: -1;
+  top: -100px;
+ right: 100px;
+}
+*/
+
+.content {
+  background: url("YOUR-NOTEBOOK-IMAGE.png") center / 100% 100% no-repeat;
+  padding: 70px 60px 70px 100px;
+}
+
 
 div.DearDiary{
   position: relative;
@@ -113,8 +141,9 @@ div.flex{
 */
 
 p{
-  font-size: 20px;
+  font-size: 30px;
   color: hotpink;
+   text-shadow: 2px 2px #0b0a32;
 
 }
 
@@ -125,3 +154,22 @@ div.bgImg{
   fill: blue;
 }
 
+/*
+div.content {
+  height: 800px;
+  aspect-ratio: 975px / 1212px;
+  background-size: contain;
+  height: 800px;
+  padding: 70px 60px 400px 30px;
+  column-count: 2;
+  column-gap: 10px;
+}
+*/
+
+.content p {
+  
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 0 0 4px;
+  break-inside: avoid;
+}
